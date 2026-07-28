@@ -1,0 +1,10 @@
+# STAGING - entorno de revision de cliente.
+# No indexar: la web oficial sigue siendo el WordPress en produccion.
+# Al pasar al dominio oficial, reemplazar por el bloque de produccion de abajo.
+User-agent: *
+Disallow: /
+
+# ---- PRODUCCION (descomentar al ir al dominio oficial y borrar lo de arriba)
+# User-agent: *
+# Allow: /
+# Sitemap: https://DOMINIO-OFICIAL/sitemap.xml
