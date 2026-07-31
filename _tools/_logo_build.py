@@ -12,7 +12,7 @@ el antialiasing de los bordes sin halos.
 """
 from PIL import Image
 
-SRC = "assets/Logo_Delia.png"
+SRC = "_source/Logo_Delia.png"
 TARGET_H = 132  # alto del asset: cubre 3x un logo mostrado a 44px
 NEAR_WHITE = 244
 MINT = (125, 227, 209)

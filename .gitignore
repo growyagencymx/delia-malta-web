@@ -1,3 +1,11 @@
 .DS_Store
 *.log
 .vscode/
+
+# Archivos de trabajo que no se publican
+_test_*.html
+
+# Originales sin optimizar (logo 1.1 MB, foto 5.5 MB).
+# Se quedan en local: el sitio usa las versiones de assets/.
+# Para regenerarlas: python3 _tools/_logo_build.py y python3 _tools/_foto_build.py
+_source/
