@@ -7,6 +7,24 @@ h1{font-size:clamp(1.5rem,3vw,2.2rem);font-weight:600;letter-spacing:-.02em;marg
 p{color:var(--graphite);max-width:34rem;margin:0 auto 2rem}
 a.btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--teal);color:#fff;font-weight:600;padding:1rem 1.8rem;border-radius:100px;text-decoration:none;box-shadow:0 14px 30px -14px rgba(0,175,165,.7);transition:transform .4s cubic-bezier(.22,1,.36,1),background .3s}
 a.btn:hover{transform:translateY(-3px);background:var(--onix)}
+
+/* ===== Logo de marca ===== */
+.brand{gap:0}
+.brand .logo{display:block;width:auto;height:44px;transition:height .45s var(--ease)}
+.brand .logo-light{display:none}
+.nav.scrolled .brand .logo{height:38px}
+.nav.dark-top:not(.scrolled) .brand .logo-dark{display:none}
+.nav.dark-top:not(.scrolled) .brand .logo-light{display:block}
+body:has(.mobile.open) .nav .brand .logo-dark{display:none}
+body:has(.mobile.open) .nav .brand .logo-light{display:block}
+body:has(.mobile.open) .nav .burger span{background:#fff}
+.footer .brand{margin-bottom:.2rem}
+.footer .brand .logo-dark{display:none}
+.footer .brand .logo-light{display:block;height:54px}
+@media(max-width:640px){
+  .brand .logo,.nav.scrolled .brand .logo{height:34px}
+  .footer .brand .logo-light{height:44px}
+}
 </style></head><body>
 <main>
   <div class="code">404</div>
